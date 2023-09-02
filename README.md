@@ -1,9 +1,9 @@
 # Spring Boot gRPC demo
 
-`Spring Boot` 整合 `grpc-server-spring-boot-starter`、`grpc-client-spring-boot-starter`
+Spring Boot 使用 gRPC
 
-1. 使用 `grpc-server-spring-boot-starter` 构建了 `gRPC server`
-2. 使用 `grpc-client-spring-boot-starter` 构建了 `gRPC client`
+1. 使用 grpc-server-spring-boot-starter 构建了 `gRPC server`
+2. 使用 grpc-client-spring-boot-starter 构建了 `gRPC client`
 3. client 和 server 之间，使用双向 tls 认证
 
 # 模块介绍
