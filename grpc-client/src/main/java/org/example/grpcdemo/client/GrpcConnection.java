@@ -2,8 +2,8 @@
 package org.example.grpcdemo.client;
 
 
-import com.example.grpctutorials.grpc.lib.api.Payload;
-import com.example.grpctutorials.grpc.lib.api.RequestGrpc;
+import com.example.grpcdemo.grpc.lib.api.Payload;
+import com.example.grpcdemo.grpc.lib.api.RequestGrpc;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
