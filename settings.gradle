@@ -1,0 +1,4 @@
+rootProject.name = 'springboot-grpc-demo'
+include 'grpc-lib'
+include 'grpc-client'
+include 'grpc-server'

@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: grpc-server
+# gRPC配置
+grpc:
+  server:
+    #端口
+    port: 9090
+    security:
+      #开启安全配置
+      enabled: true
+      #证书
+      certificate-chain: classpath:certificates/server.crt
+      #私钥
+      private-key: classpath:certificates/server.key
+      #信任证书
+      trust-cert-collection: classpath:certificates/trusted-clients.crt.collection
+      #客户端认证
+      client-auth: require
+      #协议
+      protocols: TLSv1.2
+logging:
+  level:
+    io.grpc.netty.shaded: debug

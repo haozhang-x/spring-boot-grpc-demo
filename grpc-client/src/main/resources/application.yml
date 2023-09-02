@@ -1,0 +1,25 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: grpc-client
+grpc:
+  client:
+    # gRPC配置的名字，GrpcClient注解会用到
+    grpc-server:
+      # gRPC服务端地址，这里要跟证书里面CN的一致，否则会报错
+      address: 'static://macbook-pro.local:9090'
+      #gRPC传输方式
+      negotiationType: TLS
+      #安全配置
+      security:
+        #信任证书
+        trust-cert-collection: classpath:certificates/trusted-servers.crt.collection
+        #客户端认证
+        clientAuthEnabled: true
+        #证书地址
+        certificateChain: classpath:certificates/client.crt
+        #私钥
+        private-key: classpath:certificates/client.key
+        #协议
+        protocols: TLSv1.2
