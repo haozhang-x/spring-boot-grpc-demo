@@ -1,3 +1,5 @@
+[![Build main branch](https://github.com/haozhang-x/springboot-grpc-demo/workflows/Java%20CI%20with%20Gradle/badge.svg)](https://github.com/haozhang-x/springboot-grpc-demo/actions)
+
 # Spring Boot gRPC demo
 
 Spring Boot 使用 gRPC
